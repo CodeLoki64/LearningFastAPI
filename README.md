@@ -49,6 +49,21 @@ For Linux/Mac:
 source <environment_name>/bin/activate
 ```
 
+You shall even notice this change in your terminal
+From 
+
+
+```bash
+PS C:\User\...>
+```
+
+
+TO 
+
+
+```bash
+(<environment_name>) PS C:\User\...>
+```
 
 
 ### Step 3: Install the necessary modules
@@ -60,4 +75,32 @@ Now we install the most necessary module, that is fastapi
 pip install fastapi uvicorn
 ```
 
-But for your ease I have provided a requirements.txt file and then just run this 
+
+But for your ease I have provided a requirements.txt file add it to your folder and then just run this command on terminal
+
+
+```bash
+pip install -r requirements.txt
+```
+
+
+This command installs all the modules mentioned in the requirements.txt file.
+Now you are all good to go.
+
+## Your first FastAPI app 
+Now FastAPI depends on two main functions, post and get these is the backbone of the backend. Now to make your first api, I am writing the code for you, but for complex tasks you can try it yourself.
+
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def homepage():
+    return {"message": "HI"}
+
+```
+
+
+To run the server we write the following command on the terminal
