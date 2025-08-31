@@ -48,6 +48,7 @@ For Linux/Mac:
 ```bash
 source <environment_name>/bin/activate
 ```
+<br>
 
 
 ### Step 3: Install the necessary modules
