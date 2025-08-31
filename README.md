@@ -133,3 +133,9 @@ INFO:     Started server process [10748]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
+
+Now you may go to [http://127.0.0.1.8000](http://127.0.0.1:8000) on your web browser and see your JSON object on display. In Google you may install ["JSON Formatter"](https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?utm_source=ext_app_menu), to view your JSON object in parsed format.
+
+By adding [docs](http://127.0.0.1:8000/docs) to the above URL you can also look at your API in app format at the webpage.
+
+## Congratulations!! you have created your first FASTAPI App
