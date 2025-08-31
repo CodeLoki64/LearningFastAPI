@@ -28,6 +28,6 @@ Now we install the most necessary module, that is fastapi
 
 
 ```bash
-pip install fastapi uvicorn
+cd install fastapi uvicorn
 ```
 
