@@ -1,0 +1,6 @@
+uvicorn
+fastapi
+pydantic
+httpx
+pymongo[srv]==3.12
+pymongo

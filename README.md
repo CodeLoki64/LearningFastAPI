@@ -6,9 +6,9 @@ The handling of data is basically in the form of a JSON object, which looks like
 
  ```json
 { 
-        "name": "Farhan",
-        "age": 21,
-        "skills": ["Python", "Java", "Quantum Computing"] 
+    "name": "Farhan",
+    "age": 21,
+    "skills": ["Python", "Java", "Quantum Computing"] 
 }
  ```
 
@@ -88,7 +88,7 @@ This command installs all the modules mentioned in the requirements.txt file.
 Now you are all good to go.
 
 ## Your first FastAPI app 
-Now FastAPI depends on two main functions, post and get these is the backbone of the backend. Now to make your first api, I am writing the code for you, but for complex tasks you can try it yourself.
+Now FastAPI depends on two main functions, post and get these is the backbone of the backend. Now to make your first api, create a file named "main.py", I am writing the code for you, but after this you are gonna do it yourself
 
 
 ```python
@@ -104,3 +104,32 @@ def homepage():
 
 
 To run the server we write the following command on the terminal
+
+
+```bash
+uvicorn main:app --reload
+```
+
+
+We use --reload so that it automatically relaods the server as soon a change is saved in 
+main.py . But its not always necessary to follow all the pneumatics for example 
+
+
+```text
+uvicorn main:app --reload
+        ^     ^
+  python file |
+              |
+        FastAPI app name
+```
+
+Now after running the above command. You must get an output similar to this
+
+```bash
+INFO:     Will watch for changes in these directories: ['C:\\User\\...']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [2280] using StatReload
+INFO:     Started server process [10748]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+```
